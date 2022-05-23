@@ -1,1 +1,19 @@
-include ':core', ':core-sample-app', ':chromecast-sender', ':chromecast-sender-sample-app'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Android Youtube Player"
+include ':app'
+include ':YoutubePlayer'
